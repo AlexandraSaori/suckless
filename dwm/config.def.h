@@ -17,6 +17,7 @@ static const char *colors[][3]      = {
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
 	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
 	/*add the scheme title to change de title color (bg & fg) seperating it from schemesel*/
+	/*tambien agregar esta linea al config.h antes de hacer el sudo make clean install. */
 	[SchemeTitle]  = { col_gray4, col_cyan,  col_cyan  },
 };
 

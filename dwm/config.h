@@ -22,7 +22,10 @@ static const char *colors[][3]      = {
 	[SchemeNorm] = { col_quartz, col_gray1, col_gray2 },
 	[SchemeSel]  = { col_gray1, col_rose,  col_red  },
 	/*This change the title color (fg & bg)*/
-	[SchemeTitle]  = { col_quartz, col_gray1,  col_red  },
+	/*Cambia el color de manera independiente al de el tag seleccionado
+	 *falta ver si al cambiar el color del borde en SchemeTitle afecta el color de los otros bordes
+	 * */
+	[SchemeTitle]  = { col_quartz, col_gray1,  col_cyan  },
 };
 
 /* tagging */
