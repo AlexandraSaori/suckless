@@ -8,24 +8,32 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { "SourceCodePro-regular:size=9" };/*font changed to SourceCodePro*/
 static const char dmenufont[]       = "SourceCodePro-regular:size=9";/*font changed to SourceCodePro*/
-static const char col_gray1[]       = "#222222";
+static const char col_gray1[]       = "#2c303b";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#005577";  
-static const char col_pink[]        = "#dc8a99";
+static const char col_ngray1[]      = "#2e3440";
+static const char col_ngray2[]      = "#3b4251";
+static const char col_ngray3[]      = "#4c566a";
+static const char col_cyan[]        = "#88c0d0";  
+static const char col_blue[]        = "#5e81ac";  
+static const char col_blue2[]       = "#81a1c1";  
+static const char col_pink[]        = "#b48ead";
 static const char col_rose[]        = "#de919f";
 static const char col_quartz[]      = "#f8cdcd";
-static const char col_red[]         = "#ff6961";
+static const char col_orange[]      = "#d08770";
+static const char col_green[]       = "#a3be8c";
+static const char col_yellow[]      = "#ebcb88";
+static const char col_red[]         = "#8f616a";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_quartz, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray1, col_rose,  col_red  },
+	[SchemeNorm] = { col_gray4, col_ngray1, col_ngray2 },
+	[SchemeSel]  = { col_cyan, col_ngray3,  col_red  },
 	/*This change the title color (fg & bg)*/
 	/*Cambia el color de manera independiente al de el tag seleccionado
 	 *falta ver si al cambiar el color del borde en SchemeTitle afecta el color de los otros bordes
 	 * */
-	[SchemeTitle]  = { col_quartz, col_gray1,  col_cyan  },
+	[SchemeTitle]  = { col_gray4, col_ngray1,  col_blue  },
 };
 
 /* tagging */
@@ -48,7 +56,7 @@ static const int resizehints = 0;    /* 1 means respect size hints in tiled resi
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "[]=",      tile },    /* first entry is default */
+	{ "[] ",      tile },    /* first entry is default */
 	{ "><>",      NULL },    /* no layout function means floating behavior */
 	{ "[M]",      monocle },
 };
@@ -66,7 +74,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_quartz, "-sb", col_rose, "-sf", col_gray1, NULL };
+static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_ngray1, "-nf", col_gray4, "-sb", col_cyan, "-sf", col_ngray1, NULL };
 static const char *termcmd[]  = { "lxterminal", NULL };
 
 static Key keys[] = {
