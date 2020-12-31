@@ -1,2 +1,2 @@
 # suckless
-Archivos de configuración de herramientas Suckless modificados
+Archivos de configuración de herramientas y escritorio Suckless + sus modificaciones.
