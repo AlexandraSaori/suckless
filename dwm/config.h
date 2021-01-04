@@ -6,8 +6,8 @@ static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "SourceCodePro-regular:size=9" };/*font changed to SourceCodePro*/
-static const char dmenufont[]       = "SourceCodePro-regular:size=9";/*font changed to SourceCodePro*/
+static const char *fonts[]          = { "Lato-Regular:size=8" };/*SourceCodePro-Regular*/
+static const char dmenufont[]       = "Lato-Regular:size=8";/*Lato-Regular*/
 static const char col_gray1[]       = "#2c303b";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
@@ -56,7 +56,7 @@ static const int resizehints = 0;    /* 1 means respect size hints in tiled resi
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "[] ",      tile },    /* first entry is default */
+	{ "[  ] ",      tile },    /* first entry is default */
 	{ "><>",      NULL },    /* no layout function means floating behavior */
 	{ "[M]",      monocle },
 };
