@@ -1,0 +1,10 @@
+alsamixer && kill sleep
+alsamixer && pkill sleep
+alsamixer && pkill sleep
+cd .config
+ls
+cd suckless
+ls
+cd dwm
+nvim config.h
+sudo make clean install
