@@ -1,0 +1,7 @@
+git clone https://www.github.com/mao2047/dotfiles
+cd dotfiles
+ls
+cd st
+ls
+sudo make clean install
+exit
