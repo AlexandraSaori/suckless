@@ -240,7 +240,7 @@ static int xerrorstart(Display *dpy, XErrorEvent *ee);
 static void zoom(const Arg *arg);
 
 /* variables */
-static const char broken[] = "broken";
+static const char broken[] = "Broke Bitch";
 static char stext[256];
 static int screen;
 static int sw, sh;           /* X display screen geometry width, height */

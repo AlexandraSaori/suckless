@@ -32,7 +32,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "一", "二", "三", "四", "五" };
+static const char *tags[] = { "一", "二", "三", "四", "五", "六" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -51,9 +51,9 @@ static const int resizehints = 0;    /* 1 means respect size hints in tiled resi
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "[ ]",    tile },    /* first entry is default */
-	{ "浮",      NULL },    /* no layout function means floating behavior */
-	{ "[全屏]",      monocle },
+	{ "★",    tile },    /* first entry is default */
+	{ "☆",      NULL },    /* no layout function means floating behavior */
+	{ "[]",    monocle },
 };
 
 /* key definitions */
@@ -70,7 +70,7 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray4, "-sb", col_cyan, "-sf", col_gray1, NULL };
-static const char *termcmd[]  = { "st", NULL };
+static const char *termcmd[]  = { "sakura", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
